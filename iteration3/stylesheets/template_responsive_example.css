@@ -25,6 +25,10 @@ body {
 /* The container sits in the middle of the page and is a fixed width Reference: http://www.w3schools.com/css/css_boxmodel.asp
 */
 
+p, li {
+  color: darkgray;
+}
+
 .container {
   width: 90%;
   margin-left: auto;
@@ -34,9 +38,9 @@ body {
 
 /* The next set of styles pretty much just "open up" the page and create white space */
 
-.header {
+header {
   margin: 5%;
-  clear:both;
+  clear: right;
   padding: 5%;
 }
 
@@ -58,6 +62,7 @@ body {
 .logo_img {
   float: right;
   padding-right: 1.5%;
+  clear: both;
 }
 
 
@@ -113,9 +118,11 @@ nav li{
 
 .main {
   margin-bottom: 1.5em;
+  display: block;
+  clear: both;
 }
-/* finally, the footer stretches across the whole page width in an open, centered sort of way. */
-.footer {
+
+.contact_information {
   width: 100%;
   font-size: .80em;
   min-height: 40px;
@@ -123,9 +130,6 @@ nav li{
   margin: 5%;
   padding: 5%;
   clear:both;
-}
-
-.contact_information {
   }
 
 .photo_credit {
@@ -150,6 +154,10 @@ nav li{
    clear: both;
   }
 
+  .logo_img {
+    display: none;
+  }
+
   .articles {
   width: 100%;
   }
@@ -160,6 +168,7 @@ nav li{
 
   .footer {
     margin-top: 1.5em;
+    clear: both;
   }
 
 }
