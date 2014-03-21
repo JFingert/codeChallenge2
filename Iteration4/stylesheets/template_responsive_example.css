@@ -124,6 +124,8 @@ nav li{
 
 .article_image {
   float:right;
+  padding-left: 23px;
+  padding-bottom: 23px;
 }
 
 .main {
