@@ -30,7 +30,7 @@ p, li {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-color: #8AB3CF;
@@ -40,9 +40,9 @@ p, li {
 
 header {
   margin: 5%;
-  clear: right;
-  padding: 5%;
-}
+  clear: both;
+/*  padding: 5%;
+*/}
 
 .page_heading {
   margin-left: 5%;
@@ -51,17 +51,20 @@ header {
 
 .page_title {
   color: white;
+  float: left;
 }
 
 .tagline {
   color: white;
   font-size: 20px;
-
+  float: left;
 }
 
 .logo_img {
   float: right;
-  padding-right: 1.5%;
+  /*padding-right: 1.5%;*/
+  padding-bottom: 5%;
+  display: inline-block;
   clear: both;
 }
 
@@ -85,6 +88,7 @@ nav li{
 
 .validation_badge {
   float: right;
+
 }
 
 
@@ -96,7 +100,7 @@ nav li{
 }
 
 .article {
-  margin: 5%;
+  margin: 0%;
 }
 
 .article_heading {
@@ -109,12 +113,17 @@ nav li{
 }
 
 .article_content {
+  width: 80%;
   margin: 0 5% 0 5%;
   padding: 2%;
   border:1px solid gray;
   background-color: #E4EBF0;
   font color: black
 
+}
+
+.article_image {
+  float:right;
 }
 
 .main {
@@ -137,7 +146,12 @@ nav li{
   font-size: .40em;
 }
 
-@media (max-width: 600px) {
+footer {
+  clear: both;
+}
+
+
+@media (max-width: 700px) {
   .validation_badge {
     display: none;
   }
